@@ -816,6 +816,8 @@ opacity:0.7;
 	width: 100%;
 }
 
+
+
 .g1{
 	background-image: url(../img/galeria/1.jpg);
 	height: 300px;
@@ -925,6 +927,34 @@ opacity:0.7;
 	}
 }
 
+@media screen and (max-width:480px) {
+	.g1{
+		margin-top: -15vh;
+		margin-bottom: -2vh;
+	}
+	.g2{
+		margin-top: -15vh;
+		margin-bottom: -2vh;
+	}	.g3{
+		margin-top: -15vh;
+		margin-bottom: -2vh;
+	}	.g4{
+		margin-top: -15vh;
+		margin-bottom: -2vh;
+	}	.g5{
+		margin-top: -15vh;
+		margin-bottom: -2vh;
+	}	.g6{
+		margin-top: -15vh;
+		margin-bottom: -2vh;
+	}	.g7{
+		margin-top: -15vh;
+		margin-bottom: -2vh;
+	}	.g8{
+		margin-top: -15vh;
+		margin-bottom: -2vh;
+	}
+}	
 .gal .onas-header{
 	padding-bottom: 3vw;
 	padding-top:0;
