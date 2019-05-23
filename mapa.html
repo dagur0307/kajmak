@@ -1,0 +1,70 @@
+<!-- <div id="googlemap"></div> -->
+
+<script>
+var map;
+
+function initMap() {
+     var mapCenter = {lat: //52.4430226, lng: 20.7137338};
+    map = new google.maps.Map(document.getElementById('googlemap'), {
+      zoom: 16,
+      center: mapCenter,
+      disableDefaultUI: true,
+//       styles: [
+//     {
+//         "stylers": [
+//             {
+//                 "hue": "#dd0d0d"
+//             }
+//         ]
+//     },
+//     {
+//         "featureType": "road",
+//         "elementType": "labels",
+//         "stylers": [
+//             {
+//                 "visibility": "off"
+//             }
+//         ]
+//     },
+//     {
+//         "featureType": "road",
+//         "elementType": "geometry",
+//         "stylers": [
+//             {
+//                 "lightness": 100
+//             },
+//             {
+//                 "visibility": "simplified"
+//             }
+//         ]
+//     }
+// ]
+                    });
+
+                    var locationMarkers = [];
+
+                    function addLocationMarker(name, lat, lng, status) {
+
+                        var name_coordinates = {lat: lat, lng: lng};
+
+                        window[name] = new google.maps.Marker({
+                          position: name_coordinates,
+                          icon: "assets/img/pin.png",
+                          Animation: google.maps.Animation.BOUNCE,
+                          map: map
+                        });
+
+                        locationMarkers.push(window[name]);
+
+                    };
+
+                    znacznik
+                    addLocationMarker('nazwa_znacznika',// 52.4430226, 20.7137338);
+                }
+</script>
+
+
+// <!-- Google Map -->
+// <script async defer
+//  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDVQTfe6AiAzWWUgWKaksTZiYKo4E6u05g&callback=initMap">
+// </script>
