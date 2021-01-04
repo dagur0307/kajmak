@@ -18,13 +18,21 @@
     <link rel="stylesheet" href="assets/css/slick.css">
     <script src="assets/js/slick.min.js"></script>
 
-    <!-- główny plik styli -->
-    <link rel="stylesheet" href="assets/css/style.css">
-
     <link href="https://fonts.googleapis.com/css?family=Roboto:300&display=swap&subset=latin-ext" rel="stylesheet">
+    
+    <!-- KBmodal -->
+    <script src="assets/js/KBmodal.js"></script>
+    <link rel="stylesheet" href="assets/css/KBmodal.css">
+    
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+
+    <!-- główny plik styli -->
+        <link rel="stylesheet" href="assets/css/style.css">
 
     <!-- custom-js -->
     <script src="assets/js/custom.js"></script>
+
+
 </head>
 
 <body>
@@ -37,8 +45,8 @@
                     <div class="col-lg-5 col-md-5 col-sm-5 col-xs-5 text-left">kajmak-cukiernia@gmail.com</div>
                     <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
                         <div class="text-center socialIcons">
-                            <a href="#cyk"><img src="assets/img/insta.png"></a>       
-                            <a href="#cmok"><img src="assets/img/fb.png"></a>
+                            <a href="#insta" target="_blank"><img src="assets/img/insta.png"></a>       
+                            <a href="#fb" target="_blank"><img src="assets/img/fb.png"></a>
                         </div>
                     </div>
                     <div class="text-right col-lg-5 col-md-5 col-sm-5 col-xs-5">Zadzwoń: 123 456 789</div> 
@@ -52,7 +60,7 @@
                 <div class="navbar-header">
                         <!-- Logo - telefony -->
                         <a class="navbar-brand visible-xs" href="#">
-                            <img src="assets/img/logo-top.png" alt="">
+                            <img src="assets/img/logo-top2.png" alt="">
                         </a>
                         <!-- Przycisk do rozwiania menu - telefony -->
                         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
@@ -63,9 +71,12 @@
                     </div>
                 <div class="container">
                     <div class="row"> 
-                        <div class="nav-flex collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <div class=" collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                            <div class="nav-flex">
                             <div class="col-lg-4 col-sm-3 col-xs-3 hidden-xs">
-                                <a class="logo navbar-brand-no-mobile"><img class="img-responsive" src="assets/img/logo-top.png"></a>
+                                <a class="logo navbar-brand-no-mobile btt"><img class="img-responsive" src="assets/img/logo-top.png"></a>
+                                <a class="logo abc btt"><img class="img-responsive" src="assets/img/logo-top2.png"></a>
+                           
                             </div>        
                             <div class="col-lg-8 col-sm-9 col-xs-12">
                                 <div class="menu-style text-center">
@@ -76,7 +87,8 @@
                                         <li><a href="#kontakt">KONTAKT</a></li>
                                     </ul>
                                 </div>
-                            </div>  
+                            </div> 
+                        </div> 
                         </div>
                     </div>
                 </div>     
@@ -89,12 +101,13 @@
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
                     </div>
                 <div class="right-slider">
+                    <div class="slider-wrapper">
+                        <div class="slider1 slider-bgsize"></div>
+                        <div class="slider2 slider-bgsize"></div>
+                        <div class="slider3 slider-bgsize"></div>
+                    </div>
                     <div class="slider-nav">
-                        <ul>
-                            <li></li>
-                            <li class="active"></li>
-                            <li></li>
-                        </ul>
+                        
                     </div>
                 </div> 
              </div>
@@ -113,13 +126,14 @@
                     <div class="onas-header">
                         WITAJ NA STRONIE KAJMAK
                     </div>    
-                    <div class="onas-txt">
+                    <div class="onas-txt" >
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde 
                     </div>
                 </div>
             </div>
         </div>
 
+        <div class="container-fluid">
         <div class="row">
             <div class="products-nav" id="produkty">
                     <div class="serwetka2"></div>
@@ -145,7 +159,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 col-xs-12">
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 col-xs-12" >
                         <div class="on4">
                             <div class="on1-bcg">
                                 INNE
@@ -156,9 +170,9 @@
                 <div class="serwetka"></div>
             </div>
         </div>
- 
+ </div>
         <div class="container">
-            <div class="onas-2" id="o-nas">
+            <div class="onas-2"id="o-nas">
                 <div class="whiteBG clearfix">
                     <div class="onas">
                         <div class="onas-header">
@@ -169,14 +183,14 @@
                                 <div class="onas1"></div>
                             </div>
                             <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                                    LLorem ipsum dolor sit amet, consectetur adipisicing elit, sed doFGGGGG eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa 
+                                    LLorem ipsum dolor sit amet, consectetur adipisicing elit, sed doFGGGGG eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam 
                             </div>
 
                             <div class="col-lg-push-6 col-lg-6 col-md-push-6 col-md-6 col-sm-12 col-xs-12">
                                    <div class="onas2"> </div>
                             </div>
                             <div class="col-lg-pull-6 col-lg-6 col-md-pull-6 col-md-6 col-sm-12 col-xs-12">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, 
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium 
                             </div>
                         </div>    
                     </div>
@@ -205,7 +219,7 @@
                                     </div>
 
                             </div>
-                            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12" >
                                 <div class="cnw3"> </div>
                                     <div class="cnw-txt">
                                         NISKIE CENY
@@ -217,9 +231,9 @@
             </div> 
 
             <div class="container">
-                <div class="galeria">
+                <div class="galeria"id="galeria">
                     <div class="whiteBG clearfix">
-                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" >
                             <div class="onas-icons2">
                                 <ul>
                                     <li class="icon"></li>    
@@ -230,7 +244,7 @@
                         </div>
                         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                             <div class="onas">
-                                <div class="gal" id="galeria">
+                                <div class="gal">
                                     <div class="onas-header">
                                         GALERIA
                                     </div> 
@@ -239,32 +253,32 @@
                         </div> 
                         <div class="g-nav">
                             <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
-                                <div class="g1"></div>
+                                <div class="g1 KBmodal" data-content-url="assets/img/galeria/66f362678ab37e98e46023bedff5497a--white-cakes-white-wedding-cakes.jpg" data-content-type="gallery" data-content-gallery="gg"></div>
                             </div>  
                             <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
-                                <div class="g2"></div>
+                                <div class="g2 KBmodal" data-content-url="assets/img/galeria/0d8d335ed899d4e95377b0dcf977076c.jpg" data-content-type="gallery" data-content-gallery="gg"></div>
                             </div> 
                             <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
-                                <div class="g3"></div>
+                                <div class="g3 KBmodal"data-content-url="assets/img/galeria/Easy-Mint-Chocolate-Chip-Cupcakes-Recipe.png" data-content-type="gallery" data-content-gallery="gg"></div>
                             </div> 
                             <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
-                                <div class="g4"></div>
+                                <div class="g4 KBmodal"data-content-url="assets/img/galeria/d78ff861e897b98d32fec24ca7724c5d.jpg" data-content-type="gallery" data-content-gallery="gg"></div>
                             </div> 
                             <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
-                                <div class="g5"></div>
+                                <div class="g5 KBmodal"data-content-url="assets/img/galeria/FotoFlexer_Photo4.jpg" data-content-type="gallery" data-content-gallery="gg"></div>
                             </div> 
                             <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
-                                <div class="g6"></div>
+                                <div class="g6 KBmodal"data-content-url="assets/img/galeria/843cbb6c9344d02868e5391f3aa06377.jpg" data-content-type="gallery" data-content-gallery="gg"></div>
                             </div> 
                             <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
-                                <div class="g7"></div>
+                                <div class="g7 KBmodal"data-content-url="assets/img/galeria/Fantastic-Wedding-Cake-Ideas-for-Your-Wedding-180.jpg" data-content-type="gallery" data-content-gallery="gg"></div>
                             </div> 
                             <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
-                                <div class="g8"></div>
+                                <div class="g8 KBmodal"data-content-url="assets/img/galeria/Mascarpone-Whipped-Cream-025-2.jpg" data-content-type="gallery" data-content-gallery="gg"></div>
                             </div> 
                         </div>
                         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                            <div class="onas-icons">
+                            <div class="onas-icons"id="kontakt">
                                 <ul>
                                     <li class="icon"></li>    
                                     <li class="icon"></li>    
@@ -274,7 +288,7 @@
                         </div>
                         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                             <div class="onas">
-                                <div class="onas-header"id="kontakt">
+                                <div class="onas-header">
                                     KONTAKT
                                 </div>    
                             </div>
@@ -284,78 +298,81 @@
             </div>
 
             <div class="container">
+            <div class="a1">
               <div class="whiteBG clearfix">
                     <div class="address">
-                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
                                 <div id="googlemap" class="googlemap"></div>
 
                                 <script>
-                                var map;
-                                
-                                function initMap() {
-                                    var mapCenter = {lat: 52.4430226, lng: 20.7137338};
-                                    map = new google.maps.Map(document.getElementById('googlemap'), {
-                                      zoom: 13,
-                                      center: mapCenter,
-                                      disableDefaultUI: true,
-                                      styles: [
-                                    {
-                                        "stylers": [
-                                            {
-                                                "hue": "#dd0d0d"
-                                            }
-                                        ]
-                                    },
-                                    {
-                                        "featureType": "road",
-                                        "elementType": "labels",
-                                        "stylers": [
-                                            {
-                                                "visibility": "off"
-                                            }
-                                        ]
-                                    },
-                                    {
-                                        "featureType": "road",
-                                        "elementType": "geometry",
-                                        "stylers": [
-                                            {
-                                                "lightness": 100
-                                            },
-                                            {
-                                                "visibility": "simplified"
-                                            }
-                                        ]
-                                    }
-                                ]
-                                                    });
-                                
-                                                    var locationMarkers = [];
-                                
-                                                    function addLocationMarker(name, lat, lng, status) {
-                                
-                                                        var name_coordinates = {lat: lat, lng: lng};
-                                
-                                                        window[name] = new google.maps.Marker({
-                                                          position: name_coordinates,
-                                                          icon: "assets/img/pin.png",
-                                                          Animation: google.maps.Animation.BOUNCE,
-                                                          map: map
-                                                        });
-                                
-                                                        locationMarkers.push(window[name]);
-                                
-                                                    };
-                                
-                                                    // znacznik
-                                                    addLocationMarker('nazwa_znacznika',52.4430226, 20.7137338);
+                                    var map;
+                                    
+                                    function initMap() {
+                                         var mapCenter = {lat: 52.4430226, lng: 20.7137338};
+                                        map = new google.maps.Map(document.getElementById('googlemap'), {
+                                          zoom: 12,
+                                          center: mapCenter,
+                                          disableDefaultUI: true,
+                                          styles: [
+                                        {
+                                            "stylers": [
+                                                {
+                                                    "hue": "#dd0d0d"
                                                 }
-                                </script>
+                                            ]
+                                        },
+                                        {
+                                            "featureType": "road",
+                                            "elementType": "labels",
+                                            "stylers": [
+                                                {
+                                                    "visibility": "off"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "featureType": "road",
+                                            "elementType": "geometry",
+                                            "stylers": [
+                                                {
+                                                    "lightness": 100
+                                                },
+                                                {
+                                                    "visibility": "simplified"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                                        });
+                                    
+                                                        var locationMarkers = [];
+                                    
+                                                        function addLocationMarker(name, lat, lng, status) {
+                                    
+                                                            var name_coordinates = {lat: lat, lng: lng};
+                                    
+                                                            window[name] = new google.maps.Marker({
+                                                              position: name_coordinates,
+                                                              icon: "assets/img/pin.png",
+                                                            //   Animation: google.maps.Animation.BOUNCE,
+                                                              map: map
+                                                            });
+                                    
+                                                            locationMarkers.push(window[name]);
+                                    
+                                                        };
+                                    
+                                                        // znacznik
+                                                        addLocationMarker('nazwa_znacznika', 52.4430226, 20.7137338);
+                                                    }
+                                    </script>
                         </div>
-                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                        <div class="k">
-                        <div class="k-logo"><img class="img-responsive" src="assets/img/logo-kontakt.png"></div>
-                            <br />ul. Mała 10<br />
+                    <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                        <div class="k-logo btt"><img class="img-responsive" src="assets/img/logo-kontakt.png"></div>
+                    </div>    
+                    <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12">
+                        <div class="k">   
+                        <br />ul. Mała 10<br />
                             05-100 Nowy Dwór Mazowiecki<br /><br />
                             
                             tel. 123 456 789<br />
@@ -365,13 +382,14 @@
                 </div>
                 </div>
             </div>
+            </div>
 
                 <div class="footer">
                         <div class="serwetka2"></div>
                     <div class="footer-txt">
                     <div class="container">
                         <div class="text-right col-lg-4 col-md-4 col-sm-4 col-xs-4">
-                            Artixen.net
+                            Dagmara Butkiewicz
                         </div>
                         <div class="text-center col-lg-4 col-md-4 col-sm-4 col-xs-4">
                             2019
@@ -385,6 +403,12 @@
  <!-- Google Map -->
  <script async defer
  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDVQTfe6AiAzWWUgWKaksTZiYKo4E6u05g&callback=initMap">
-</script>
+ </script>
+
+<div class="btt">
+    <div class="back-to-top">
+        <i class="fas fa-angle-double-up hidden-xs"></i>
+    </div>
+
 </body>
 </html>
